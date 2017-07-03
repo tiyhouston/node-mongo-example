@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Hi</h1>
+
+    {{#restaurants}}
+
+    <div class="">
+      <h3>{{name}} - <small>{{cuisine}}</small></h3>
+
+      <address>
+          {{address.building}} {{address.street}}<br>
+          New York NY, {{address.zipcode}}
+      </address>
+
+      <strong>Grades</strong>
+      {{#grades}}
+        <li>{{grade}}</li>
+      {{/grades}}
+    </div>
+
+    {{/restaurants}}
+  </body>
+</html>
